@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fairgrain Design + Build | Kitchens, Bathrooms & Basements in Harlow Valley</title>
+<meta name="description" content="Fairgrain is a design-build general contractor in Harlow Valley. Kitchen and bathroom remodels, basement finishing, custom built-ins and decks. One team designs it, builds it and backs it for 10 years.">
+<meta name="theme-color" content="#1F1B17">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fairgrain Design + Build">
+<meta property="og:description" content="Kitchens, bathrooms, basements and custom millwork, designed and built by one team in Harlow Valley.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=1200&q=80&auto=format&fit=crop">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F1B17'/%3E%3Cpath d='M18 46V18h28M18 32h20' stroke='%23C8784E' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Fairgrain Design + Build",
+  "description": "Design-build general contractor for kitchens, bathrooms, basements, custom built-ins and decks.",
+  "telephone": "+1-555-214-0187",
+  "email": "hello@fairgrainbuild.com",
+  "priceRange": "$$$",
+  "address": { "@type": "PostalAddress", "streetAddress": "118 Mill Race Road", "addressLocality": "Harlow Valley", "addressRegion": "ON", "postalCode": "A1B 2C3", "addressCountry": "CA" },
+  "areaServed": ["Harlow Valley", "Westbrook", "Cedar Falls", "Lakeshore", "North Ridge"],
+  "openingHours": "Mo-Fr 07:30-17:30",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "212" }
+}
+</script>
+
+<style>
+  :root {
+    --ink: #1F1B17;
+    --ink-2: #2A2520;
+    --ink-3: #3A332C;
+    --paper: #FBF8F3;
+    --linen: #F3EDE3;
+    --sand: #E8DFD1;
+    --line: #E1D7C8;
+    --stone: #7B7166;
+    --mute: #A89C8D;
+    --clay: #B5643C;
+    --clay-hi: #C8784E;
+    --sage: #5F7D6D;
+    --brass: #C39A55;
+    --white: #FFFFFF;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --wrap: 1280px;
+    --gutter: clamp(16px, 4vw, 40px);
+    --ease: cubic-bezier(.2, .7, .1, 1);
+    --radius: 18px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 1.0625rem/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--clay-hi); outline-offset: 4px; border-radius: 4px; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Type */
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; letter-spacing: -.02em; font-variation-settings: "opsz" 144; }
+  h1 { font-size: clamp(2.9rem, 7.4vw, 6.6rem); line-height: .96; }
+  h2 { font-size: clamp(2.3rem, 5vw, 4.2rem); line-height: 1.02; }
+  h3 { font-size: 1.55rem; line-height: 1.15; letter-spacing: -.01em; }
+  h1 em, h2 em { font-style: italic; font-weight: 300; color: var(--clay); }
+  p { margin: 0; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    font: 600 .78rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--clay);
+  }
+  .eyebrow::before { content: ""; width: 28px; height: 1.5px; background: currentColor; }
+  .lede { font-size: 1.18rem; line-height: 1.6; color: var(--stone); max-width: 54ch; }
+  .dark { background: var(--ink); color: var(--linen); }
+  .dark .lede { color: var(--mute); }
+  .dark h2 em { color: var(--clay-hi); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    font: 600 1rem/1 var(--sans); letter-spacing: .01em;
+    padding: 18px 28px; border-radius: 999px; text-decoration: none; cursor: pointer;
+    border: 1.5px solid transparent; transition: background .25s, color .25s, border-color .25s, transform .25s var(--ease);
+  }
+  .btn svg { width: 18px; height: 18px; transition: transform .25s var(--ease); }
+  .btn:hover svg { transform: translateX(3px); }
+  .btn-clay { background: var(--clay); color: var(--white); }
+  .btn-clay:hover { background: var(--clay-hi); }
+  .btn-light { background: var(--paper); color: var(--ink); }
+  .btn-light:hover { background: var(--white); }
+  .btn-ghost { border-color: rgba(255,255,255,.38); color: var(--white); background: rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+  .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.14); }
+  .btn-line { border-color: var(--ink); color: var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--paper); }
+
+  /* Header */
+  .hdr { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .35s, box-shadow .35s, color .35s; color: var(--white); }
+  .hdr .bar { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 24px; }
+  .hdr.solid { background: rgba(251,248,243,.92); backdrop-filter: blur(14px) saturate(1.4); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand-mark { width: 38px; height: 38px; flex: none; }
+  .brand-name { font: 500 1.35rem/1 var(--serif); letter-spacing: -.01em; }
+  .brand-name small { display: block; font: 600 .62rem/1 var(--sans); letter-spacing: .26em; text-transform: uppercase; opacity: .7; margin-top: 5px; }
+  .nav { display: flex; align-items: center; gap: 30px; }
+  .nav a.l { font-size: .95rem; font-weight: 500; text-decoration: none; opacity: .86; position: relative; }
+  .nav a.l::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease); }
+  .nav a.l:hover { opacity: 1; }
+  .nav a.l:hover::after { transform: scaleX(1); }
+  .hdr-cta { display: flex; align-items: center; gap: 18px; }
+  .hdr-phone { font-weight: 600; font-size: .95rem; text-decoration: none; white-space: nowrap; }
+  .hdr .btn { padding: 13px 20px; font-size: .92rem; }
+  .menu-btn { display: none; background: none; border: 0; width: 44px; height: 44px; cursor: pointer; padding: 10px; }
+  .menu-btn span { display: block; height: 2px; background: currentColor; margin: 6px 0; transition: transform .3s, opacity .3s; }
+  .menu-open .menu-btn span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .menu-open .menu-btn span:nth-child(2) { opacity: 0; }
+  .menu-open .menu-btn span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* Hero */
+  .hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: flex-end; color: var(--white); overflow: hidden; }
+  .hero-img { position: absolute; inset: 0; }
+  .hero-img img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); animation: settle 2.4s var(--ease) forwards; }
+  @keyframes settle { to { transform: scale(1); } }
+  .hero::after { content: ""; position: absolute; inset: 0; background:
+      linear-gradient(90deg, rgba(20,16,12,.82) 0%, rgba(20,16,12,.5) 45%, rgba(20,16,12,.1) 80%),
+      linear-gradient(0deg, rgba(20,16,12,.7) 0%, rgba(20,16,12,0) 45%); }
+  .hero .wrap { position: relative; z-index: 2; width: 100%; padding-top: 140px; padding-bottom: 56px; }
+  .hero h1 { max-width: 12ch; }
+  .hero h1 em { color: #F0B48E; }
+  .hero .lede { color: rgba(255,255,255,.82); margin-top: 26px; }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+  .hero-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-top: 72px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.2); }
+  .trust { display: flex; flex-wrap: wrap; gap: 14px 36px; list-style: none; margin: 0; padding: 0; font-size: .92rem; color: rgba(255,255,255,.85); }
+  .trust li { display: flex; align-items: center; gap: 10px; }
+  .trust svg { width: 18px; height: 18px; color: #F0B48E; flex: none; }
+  .rating { display: flex; align-items: center; gap: 14px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); backdrop-filter: blur(12px); padding: 14px 20px; border-radius: 14px; white-space: nowrap; }
+  .rating b { font: 500 2rem/1 var(--serif); }
+  .stars { color: #F2C14E; letter-spacing: 2px; font-size: .95rem; }
+  .rating small { display: block; font-size: .8rem; color: rgba(255,255,255,.7); }
+
+  /* Ticker */
+  .ticker { background: var(--clay); color: var(--white); overflow: hidden; padding: 18px 0; }
+  .ticker-track { display: flex; gap: 48px; width: max-content; animation: tick 38s linear infinite; }
+  .ticker span { font: 400 1.35rem/1 var(--serif); font-style: italic; white-space: nowrap; display: flex; align-items: center; gap: 48px; }
+  .ticker span::after { content: "✦"; font-style: normal; font-size: .8rem; opacity: .7; }
+  @keyframes tick { to { transform: translateX(-50%); } }
+
+  section { position: relative; }
+  .pad { padding: clamp(80px, 11vw, 150px) 0; }
+  .head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 64px; align-items: end; margin-bottom: clamp(44px, 6vw, 72px); }
+  .head h2 { margin-top: 18px; }
+
+  /* Before / After */
+  .ba-section { background: var(--linen); }
+  .tabs { display: inline-flex; gap: 6px; padding: 6px; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; margin-bottom: 28px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { border: 0; background: transparent; padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: .95rem; cursor: pointer; color: var(--stone); white-space: nowrap; transition: background .25s, color .25s; }
+  .tab[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+  .tab:not([aria-selected="true"]):hover { color: var(--ink); }
+  .ba-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 28px; align-items: stretch; }
+
+  .ba { position: relative; aspect-ratio: 3 / 2; border-radius: var(--radius); overflow: hidden; user-select: none; touch-action: pan-y; cursor: ew-resize; background: var(--sand); box-shadow: 0 30px 60px -30px rgba(31,27,23,.35); --pos: 50%; }
+  .ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; -webkit-user-drag: none; }
+  .ba .before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+  .ba-line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--white); box-shadow: 0 0 12px rgba(0,0,0,.25); pointer-events: none; }
+  .ba-knob { position: absolute; top: 50%; left: var(--pos); width: 62px; height: 62px; margin: -31px 0 0 -31px; border-radius: 50%; background: var(--white); color: var(--ink); display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.25); pointer-events: none; transition: transform .25s var(--ease); }
+  .ba:hover .ba-knob, .ba.dragging .ba-knob { transform: scale(1.08); }
+  .ba-knob svg { width: 28px; height: 28px; }
+  .ba-tag { position: absolute; top: 18px; padding: 8px 14px; border-radius: 999px; font: 600 .74rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; pointer-events: none; transition: opacity .3s; }
+  .ba-tag.b { left: 18px; background: rgba(31,27,23,.78); color: var(--white); }
+  .ba-tag.a { right: 18px; background: rgba(255,255,255,.92); color: var(--ink); }
+  .ba input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; margin: 0; cursor: ew-resize; }
+  .ba input[type=range]:focus-visible ~ .ba-knob { outline: 3px solid var(--clay-hi); outline-offset: 3px; }
+  .ba-hint { display: flex; align-items: center; gap: 10px; margin-top: 16px; font-size: .9rem; color: var(--stone); }
+  .ba-hint svg { width: 18px; height: 18px; }
+
+  .proj { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(26px, 3vw, 40px); display: flex; flex-direction: column; }
+  .proj-loc { font-size: .85rem; color: var(--stone); font-weight: 500; letter-spacing: .02em; }
+  .proj h3 { font-size: clamp(1.7rem, 2.4vw, 2.1rem); margin: 10px 0 14px; }
+  .proj p { color: var(--stone); }
+  .proj-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin: 24px 0; }
+  .proj-meta div { background: var(--paper); padding: 14px 16px; }
+  .proj-meta dt { font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
+  .proj-meta dd { margin: 4px 0 0; font: 500 1.15rem/1.2 var(--serif); }
+  .scope { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .scope li { font-size: .84rem; padding: 6px 12px; border-radius: 999px; background: var(--linen); color: var(--ink-3); }
+  .proj blockquote { margin: auto 0 0; padding-top: 22px; border-top: 1px solid var(--line); font: 400 1.05rem/1.5 var(--serif); font-style: italic; color: var(--ink-3); }
+  .proj blockquote cite { display: block; font: 500 .85rem/1.4 var(--sans); font-style: normal; color: var(--stone); margin-top: 10px; }
+  .fade-swap { animation: swap .5s var(--ease); }
+  @keyframes swap { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  /* Services */
+  .svc-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+  .svc { grid-column: span 4; position: relative; border-radius: var(--radius); overflow: hidden; min-height: 440px; color: var(--white); display: flex; align-items: flex-end; text-decoration: none; isolation: isolate; }
+  .svc.wide { grid-column: span 6; }
+  .svc img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1s var(--ease); }
+  .svc::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(20,16,12,.88) 0%, rgba(20,16,12,.25) 55%, rgba(20,16,12,.05) 100%); }
+  .svc:hover img { transform: scale(1.05); }
+  .svc-body { padding: 30px; width: 100%; }
+  .svc-num { font: 400 .9rem/1 var(--serif); font-style: italic; opacity: .7; }
+  .svc h3 { margin: 10px 0 10px; font-size: 1.85rem; }
+  .svc p { color: rgba(255,255,255,.78); font-size: .98rem; max-width: 40ch; }
+  .svc-more { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-weight: 600; font-size: .9rem; color: #F0B48E; }
+  .svc-more svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+  .svc:hover .svc-more svg { transform: translateX(4px); }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.14); }
+  .stat { padding: 40px 28px 8px 0; border-right: 1px solid rgba(255,255,255,.14); padding-left: 28px; }
+  .stat:first-child { padding-left: 0; }
+  .stat:last-child { border-right: 0; }
+  .stat b { display: block; font: 300 clamp(3rem, 5.5vw, 4.8rem)/1 var(--serif); color: var(--white); letter-spacing: -.03em; }
+  .stat b sup { font-size: .45em; color: var(--clay-hi); vertical-align: top; position: relative; top: .3em; margin-left: 2px; }
+  .stat > span { display: block; margin-top: 14px; color: var(--mute); font-size: .95rem; max-width: 22ch; }
+
+  /* Process */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: s; list-style: none; padding: 0; margin: 0; }
+  .step { position: relative; padding: 32px 28px 34px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); transition: transform .4s var(--ease), box-shadow .4s; }
+  .step:hover { transform: translateY(-6px); box-shadow: 0 24px 50px -28px rgba(31,27,23,.35); }
+  .step-n { font: 300 3.6rem/1 var(--serif); color: var(--clay); letter-spacing: -.03em; }
+  .step h3 { margin: 26px 0 10px; }
+  .step p { color: var(--stone); font-size: .98rem; }
+  .step small { display: inline-block; margin-top: 18px; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--sage); }
+
+  /* About */
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+  .about-media { position: relative; }
+  .about-media .main { border-radius: var(--radius); aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+  .about-media .inset { position: absolute; right: -28px; bottom: -36px; width: 46%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; border: 8px solid var(--paper); box-shadow: 0 20px 50px -20px rgba(0,0,0,.35); }
+  .badge { position: absolute; left: -22px; top: 36px; width: 124px; height: 124px; border-radius: 50%; background: var(--clay); color: var(--white); display: grid; place-items: center; text-align: center; box-shadow: 0 14px 30px -12px rgba(181,100,60,.6); }
+  .badge b { display: block; font: 400 2.4rem/1 var(--serif); }
+  .badge span { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; line-height: 1.3; }
+  .about h2 { margin: 18px 0 24px; }
+  .about .lede + p { margin-top: 18px; color: var(--stone); }
+  .checks { list-style: none; padding: 0; margin: 32px 0 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+  .checks li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
+  .checks svg { width: 22px; height: 22px; flex: none; color: var(--sage); margin-top: 1px; }
+  .sig { display: flex; align-items: center; gap: 16px; }
+  .sig-name { font: 400 1.6rem/1 var(--serif); font-style: italic; }
+  .sig small { display: block; color: var(--stone); font-size: .85rem; margin-top: 4px; font-style: normal; font-family: var(--sans); }
+
+  /* Gallery */
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: clamp(150px, 17vw, 240px); grid-auto-flow: dense; gap: 18px; }
+  .gallery figure { margin: 0; position: relative; border-radius: 14px; overflow: hidden; }
+  .gallery .big { grid-column: span 2; grid-row: span 2; }
+  .gallery .tall { grid-row: span 2; }
+  .gallery .wide { grid-column: span 2; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }
+  .gallery figure:hover img { transform: scale(1.04); }
+  .gallery figcaption { position: absolute; left: 14px; bottom: 14px; padding: 8px 14px; border-radius: 999px; background: rgba(251,248,243,.92); font-size: .82rem; font-weight: 600; transform: translateY(8px); opacity: 0; transition: .35s var(--ease); }
+  .gallery figure:hover figcaption { transform: none; opacity: 1; }
+
+  /* Reviews */
+  .reviews { background: var(--linen); }
+  .rev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .rev { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 34px 30px; display: flex; flex-direction: column; }
+  .rev .stars { color: var(--clay); font-size: 1rem; }
+  .rev p { font: 400 1.18rem/1.5 var(--serif); margin: 18px 0 26px; color: var(--ink-2); }
+  .rev footer { margin-top: auto; display: flex; align-items: center; gap: 14px; }
+  .avatar { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; font-weight: 600; color: var(--white); flex: none; }
+  .rev footer b { display: block; font-size: .98rem; }
+  .rev footer span { font-size: .85rem; color: var(--stone); }
+  .rev-summary { display: flex; align-items: center; gap: 18px; }
+  .rev-summary b { font: 300 4rem/1 var(--serif); letter-spacing: -.03em; }
+  .rev-summary span { color: var(--stone); font-size: .95rem; }
+
+  /* FAQ */
+  .faq { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(40px, 6vw, 96px); }
+  .faq-list details { border-bottom: 1px solid var(--line); }
+  .faq-list details:first-child { border-top: 1px solid var(--line); }
+  .faq-list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0; font: 400 1.3rem/1.3 var(--serif); }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary i { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; flex: none; transition: transform .3s var(--ease), background .3s; font-style: normal; }
+  .faq-list details[open] summary i { transform: rotate(45deg); background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .faq-list details p { padding: 0 56px 28px 0; color: var(--stone); }
+
+  /* Quote */
+  .quote { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+  .quote h2 { margin: 18px 0 24px; }
+  .contact-list { list-style: none; padding: 0; margin: 40px 0 0; display: grid; gap: 22px; }
+  .contact-list li { display: flex; gap: 16px; align-items: flex-start; }
+  .contact-list .ic { width: 46px; height: 46px; border-radius: 12px; background: var(--ink-2); display: grid; place-items: center; flex: none; color: var(--clay-hi); }
+  .contact-list .ic svg { width: 20px; height: 20px; }
+  .contact-list small { display: block; color: var(--mute); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
+  .contact-list a, .contact-list span.v { font: 400 1.25rem/1.4 var(--serif); text-decoration: none; color: var(--white); }
+  .form { background: var(--paper); color: var(--ink); border-radius: 22px; padding: clamp(26px, 3.5vw, 44px); }
+  .form h3 { font-size: 1.8rem; }
+  .form > p { color: var(--stone); margin-top: 8px; }
+  .fgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+  .fgrid .full { grid-column: 1 / -1; }
+  .field label, .field legend { display: block; font-size: .82rem; font-weight: 600; margin-bottom: 8px; color: var(--ink-3); padding: 0; }
+  .field input, .field select, .field textarea {
+    width: 100%; font: inherit; font-size: 1rem; color: var(--ink); background: var(--white);
+    border: 1.5px solid var(--line); border-radius: 12px; padding: 14px 16px; transition: border-color .2s, box-shadow .2s;
+  }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--clay); box-shadow: 0 0 0 4px rgba(181,100,60,.14); }
+  fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { position: relative; }
+  .chip input { position: absolute; left: 0; top: 0; opacity: 0; pointer-events: none; }
+  .chip span { display: inline-block; padding: 10px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--white); font-size: .92rem; font-weight: 500; cursor: pointer; transition: .2s; }
+  .chip input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chip input:focus-visible + span { outline: 2px solid var(--clay-hi); outline-offset: 2px; }
+  .form .btn { width: 100%; margin-top: 22px; }
+  .form-note { font-size: .82rem; color: var(--stone); margin-top: 14px; text-align: center; }
+  .form-done { display: none; text-align: center; padding: 40px 10px; }
+  .form-done .tick { width: 72px; height: 72px; border-radius: 50%; background: var(--sage); color: var(--white); display: grid; place-items: center; margin: 0 auto 22px; }
+  .form-done .tick svg { width: 34px; height: 34px; }
+  .form.sent .form-body { display: none; }
+  .form.sent .form-done { display: block; animation: swap .6s var(--ease); }
+
+  /* Footer */
+  .ftr { background: #16130F; color: var(--mute); padding: 80px 0 40px; font-size: .95rem; }
+  .ftr-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
+  .ftr .brand { color: var(--white); }
+  .ftr p { margin-top: 18px; max-width: 34ch; }
+  .ftr h4 { color: var(--white); font: 600 .78rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; margin: 0 0 18px; }
+  .ftr ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .ftr a { text-decoration: none; }
+  .ftr a:hover { color: var(--white); }
+  .ftr-base { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,.1); margin-top: 60px; padding-top: 28px; font-size: .85rem; }
+  .socials { display: flex; gap: 10px; margin-top: 24px; }
+  .socials a { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.18); display: grid; place-items: center; transition: .2s; }
+  .socials a:hover { background: var(--clay); border-color: var(--clay); color: var(--white); }
+  .socials svg { width: 17px; height: 17px; }
+
+  /* Mobile action bar */
+  .mbar { display: none; }
+
+  /* Reveal */
+  .rv { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+  .rv.in { opacity: 1; transform: none; }
+  .rv.d1 { transition-delay: .08s; } .rv.d2 { transition-delay: .16s; } .rv.d3 { transition-delay: .24s; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .rv { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .nav { gap: 22px; }
+    .hdr-phone { display: none; }
+    .svc, .svc.wide { grid-column: span 6; }
+    .steps { grid-template-columns: repeat(2, 1fr); }
+    .ftr-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 960px) {
+    .menu-btn { display: block; }
+    .hdr.solid { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(251,248,243,.98); }
+    .nav { position: fixed; inset: 0; height: 100vh; height: 100dvh; background: var(--ink); color: var(--white); flex-direction: column; justify-content: center; gap: 26px; transform: translateY(-100%); visibility: hidden; transition: transform .5s var(--ease), visibility 0s .5s; z-index: -1; }
+    .nav a.l { font: 400 2rem/1 var(--serif); opacity: 1; }
+    .menu-open .nav { transform: none; visibility: visible; transition: transform .5s var(--ease); }
+    .menu-open.hdr { color: var(--white); background: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .hdr-cta .btn { display: none; }
+    .head, .ba-grid, .about, .faq, .quote { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .stat { border-right: 0; padding-left: 0; border-bottom: 1px solid rgba(255,255,255,.14); padding-bottom: 32px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .rev-grid { grid-template-columns: 1fr; }
+    .about-media { margin: 0 28px 36px 22px; }
+  }
+  @media (max-width: 640px) {
+    body { padding-bottom: 72px; }
+    .hdr .bar { height: 70px; }
+    .hero .wrap { padding-bottom: 36px; }
+    .hero-foot { flex-direction: column; align-items: flex-start; margin-top: 44px; }
+    .hero-ctas .btn { flex: 1 1 100%; }
+    .svc, .svc.wide { grid-column: span 12; min-height: 380px; }
+    .steps { grid-template-columns: 1fr; }
+    .checks, .fgrid { grid-template-columns: 1fr; }
+    .tab { padding: 11px 16px; font-size: .9rem; }
+    .ba-knob { width: 50px; height: 50px; margin: -25px 0 0 -25px; }
+    .ba-tag { top: 12px; font-size: .66rem; padding: 7px 11px; }
+    .ba-tag.b { left: 12px; } .ba-tag.a { right: 12px; }
+    .proj-meta { grid-template-columns: 1fr 1fr; }
+    .gallery { grid-auto-rows: 160px; }
+    .gallery figcaption { opacity: 1; transform: none; left: 10px; bottom: 10px; font-size: .72rem; padding: 6px 10px; }
+    .faq-list details p { padding-right: 0; }
+    .ftr-grid { grid-template-columns: 1fr; }
+    .badge { width: 100px; height: 100px; left: -14px; }
+    .badge b { font-size: 2rem; }
+    .about-media .inset { right: -20px; }
+    .mbar { display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(251,248,243,.95); backdrop-filter: blur(12px); border-top: 1px solid var(--line); }
+    .mbar .btn { padding: 15px 10px; font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap bar">
+    <a href="#top" class="brand" aria-label="Fairgrain Design + Build, home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="currentColor" opacity=".12"/><path d="M12 30V11h17M12 20.5h12" stroke="#C8784E" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M29 17c-3 2-3 9 0 13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".55"/></svg>
+      <span class="brand-name">Fairgrain<small>Design + Build</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="l" href="#work">Our Work</a>
+      <a class="l" href="#services">Services</a>
+      <a class="l" href="#process">Process</a>
+      <a class="l" href="#about">About</a>
+      <a class="l" href="#reviews">Reviews</a>
+      <a class="l" href="#faq">FAQ</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="hdr-phone" href="tel:+15552140187">(555) 214-0187</a>
+      <a class="btn btn-clay" href="#quote">Free Estimate</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img"><img src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=2400&q=80&auto=format&fit=crop" alt="Bright oak kitchen with a long island and doors opening to the garden" fetchpriority="high"></div>
+    <div class="wrap">
+      <span class="eyebrow" style="color:#F0B48E">Design-build contractor · Harlow Valley</span>
+      <h1 style="margin-top:22px">Rooms you'll love coming <em>home</em> to.</h1>
+      <p class="lede">Kitchens, bathrooms, basements and custom millwork. One team designs it, builds it, and stands behind it for ten years.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-clay" href="#quote">Book a free consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#work">See before &amp; after</a>
+      </div>
+      <div class="hero-foot">
+        <ul class="trust">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>Licensed, bonded &amp; insured</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>On-time or we pay the difference</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg>10-year workmanship warranty</li>
+        </ul>
+        <div class="rating">
+          <b>4.9</b>
+          <div><div class="stars" aria-hidden="true">★★★★★</div><small>212 Google reviews</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Kitchen remodels</span><span>Bathroom renovations</span><span>Basement finishing</span><span>Custom built-ins</span><span>Decks &amp; outdoor living</span><span>Home additions</span><span>Interior design</span>
+      <span>Kitchen remodels</span><span>Bathroom renovations</span><span>Basement finishing</span><span>Custom built-ins</span><span>Decks &amp; outdoor living</span><span>Home additions</span><span>Interior design</span>
+    </div>
+  </div>
+
+  <!-- BEFORE / AFTER -->
+  <section class="ba-section pad" id="work">
+    <div class="wrap">
+      <div class="head">
+        <div class="rv">
+          <span class="eyebrow">Before &amp; after</span>
+          <h2>Drag the line. <em>See the difference.</em></h2>
+        </div>
+        <p class="lede rv d1">Every project starts as a room that isn't working. Slide across a few recent transformations and see what one team, one plan and a lot of care can do.</p>
+      </div>
+
+      <div class="tabs rv" role="tablist" aria-label="Choose a project">
+        <button class="tab" role="tab" aria-selected="true" data-p="0">Kitchen</button>
+        <button class="tab" role="tab" aria-selected="false" data-p="1">Bathroom</button>
+        <button class="tab" role="tab" aria-selected="false" data-p="2">Basement</button>
+      </div>
+
+      <div class="ba-grid rv d1">
+        <div>
+          <div class="ba" id="ba">
+            <img class="after" id="baAfter" src="assets/before-after/kitchen-after.svg" alt="After: kitchen with deep green cabinets, oak shelving and a fluted oak island">
+            <img class="before" id="baBefore" src="assets/before-after/kitchen-before.svg" alt="Before: dated kitchen with orange oak cabinets and laminate counters">
+            <span class="ba-tag b">Before</span>
+            <span class="ba-tag a">After</span>
+            <div class="ba-line"></div>
+            <input type="range" min="0" max="100" value="50" step="0.5" id="baRange" aria-label="Before and after comparison. Use arrow keys to reveal more of either image.">
+            <div class="ba-knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+          </div>
+          <p class="ba-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 13V5.5a1.5 1.5 0 013 0V12m0-1.5a1.5 1.5 0 013 0V12m0-1a1.5 1.5 0 013 0v4a6 6 0 01-6 6h-1a5 5 0 01-4-2l-3-4a1.5 1.5 0 012.3-1.9L8 15"/></svg>Drag or swipe the handle to compare</p>
+        </div>
+
+        <article class="proj" id="proj" aria-live="polite">
+          <span class="proj-loc" id="pLoc">Westbrook · Completed 2026</span>
+          <h3 id="pTitle">The Alder Street Kitchen</h3>
+          <p id="pDesc">A cramped 1990s kitchen opened up into the heart of the home: a new steel window over the sink, a fluted oak island that seats three, and storage for everything.</p>
+          <dl class="proj-meta">
+            <div><dt>Timeline</dt><dd id="pTime">7 weeks</dd></div>
+            <div><dt>Investment</dt><dd id="pCost">$68k to $82k</dd></div>
+          </dl>
+          <ul class="scope" id="pScope"></ul>
+          <blockquote id="pQuote">"We cook together every night now. It doesn't even feel like the same house."<cite>The Laurent family</cite></blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="pad" id="services">
+    <div class="wrap">
+      <div class="head">
+        <div class="rv">
+          <span class="eyebrow">What we build</span>
+          <h2>Everything inside your home, <em>done properly.</em></h2>
+        </div>
+        <p class="lede rv d1">From a single bathroom to a whole-floor renovation, we handle design, permits, trades and finishing under one contract, with one point of contact.</p>
+      </div>
+      <div class="svc-grid">
+        <a href="#quote" class="svc wide rv">
+          <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=1400&q=75&auto=format&fit=crop" alt="Kitchen with dark lower cabinets and open shelving" loading="lazy">
+          <div class="svc-body"><span class="svc-num">01</span><h3>Kitchen Remodels</h3><p>Layouts that work the way you cook, with cabinetry, counters, lighting and tile all coordinated.</p><span class="svc-more">Start your kitchen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </a>
+        <a href="#quote" class="svc wide rv d1">
+          <img src="https://images.unsplash.com/photo-1781344334947-60c704bafd51?w=1400&q=75&auto=format&fit=crop" alt="Spa bathroom with double vanity and freestanding tub" loading="lazy">
+          <div class="svc-body"><span class="svc-num">02</span><h3>Bathroom Renovations</h3><p>Curbless showers, heated floors and waterproofing done right the first time, behind the tile where it counts.</p><span class="svc-more">Plan your bathroom <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </a>
+        <a href="#quote" class="svc rv">
+          <img src="https://images.unsplash.com/photo-1765959617888-30837a158667?w=1000&q=75&auto=format&fit=crop" alt="Cozy family room with fireplace and bookshelves" loading="lazy">
+          <div class="svc-body"><span class="svc-num">03</span><h3>Basement Finishing</h3><p>Family rooms, guest suites and home gyms, fully insulated, moisture-proofed and permitted.</p><span class="svc-more">Finish your basement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </a>
+        <a href="#quote" class="svc rv d1">
+          <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1000&q=75&auto=format&fit=crop" alt="Living room with marble fireplace and custom dark wood shelving" loading="lazy">
+          <div class="svc-body"><span class="svc-num">04</span><h3>Custom Built-ins</h3><p>Shelving, media walls, banquettes and closets, designed and built in our own shop.</p><span class="svc-more">Design a built-in <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </a>
+        <a href="#quote" class="svc rv d2">
+          <img src="https://images.unsplash.com/photo-1574120583586-de8847ae992c?w=1000&q=75&auto=format&fit=crop" alt="Cedar deck outside glass doors surrounded by trees" loading="lazy">
+          <div class="svc-body"><span class="svc-num">05</span><h3>Decks &amp; Outdoor Living</h3><p>Cedar and composite decks, pergolas and covered porches built for our winters.</p><span class="svc-more">Plan your deck <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="dark pad" style="padding-top:clamp(70px,9vw,120px);padding-bottom:clamp(70px,9vw,120px)">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:0">
+        <div class="rv"><span class="eyebrow" style="color:var(--clay-hi)">By the numbers</span><h2 style="margin-top:18px">Built on <em>reputation</em>, not advertising.</h2></div>
+        <p class="lede rv d1">Most of our work comes from neighbours who've seen a finished project. Here's why they keep calling.</p>
+      </div>
+      <div class="stats" style="margin-top:56px">
+        <div class="stat rv"><b><span data-count="18">0</span></b><span>Years building in Harlow Valley</span></div>
+        <div class="stat rv d1"><b><span data-count="640">0</span><sup>+</sup></b><span>Kitchens, baths &amp; basements completed</span></div>
+        <div class="stat rv d2"><b><span data-count="96">0</span><sup>%</sup></b><span>Of projects finished on or ahead of schedule</span></div>
+        <div class="stat rv d3"><b><span data-count="10">0</span><sup>yr</sup></b><span>Workmanship warranty on every job</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pad" id="process">
+    <div class="wrap">
+      <div class="head">
+        <div class="rv"><span class="eyebrow">How it works</span><h2>A clear plan, <em>start to finish.</em></h2></div>
+        <p class="lede rv d1">No guesswork, no surprise invoices. You'll know the design, the price and the schedule before we pick up a hammer.</p>
+      </div>
+      <ol class="steps">
+        <li class="step rv"><div class="step-n">01</div><h3>Consultation</h3><p>We visit your home, listen to how you live, measure up and talk honestly about budget.</p><small>Free · 60 minutes</small></li>
+        <li class="step rv d1"><div class="step-n">02</div><h3>Design &amp; Price</h3><p>3D drawings, material selections and a fixed, line-item quote. Change anything you like.</p><small>1 to 3 weeks</small></li>
+        <li class="step rv d2"><div class="step-n">03</div><h3>Build</h3><p>A dedicated project lead, a tidy site, and weekly photo updates so you're never in the dark.</p><small>Fixed schedule</small></li>
+        <li class="step rv d3"><div class="step-n">04</div><h3>Walkthrough</h3><p>We walk every detail with you, fix anything that's not perfect, and hand over your warranty.</p><small>10-year warranty</small></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="pad" id="about" style="padding-top:0">
+    <div class="wrap about">
+      <div class="about-media rv">
+        <img class="main" src="https://images.unsplash.com/photo-1659930087003-2d64e33181f7?w=1100&q=75&auto=format&fit=crop" alt="Carpenter marking a cut line on a board with a pencil" loading="lazy">
+        <img class="inset" src="https://images.unsplash.com/photo-1772442198624-4fc4d7281e89?w=600&q=75&auto=format&fit=crop" alt="Project lead reviewing blueprints on site" loading="lazy">
+        <div class="badge"><div><b>18</b><span>years of<br>craft</span></div></div>
+      </div>
+      <div class="rv d1">
+        <span class="eyebrow">Who we are</span>
+        <h2>Carpenters first. <em>Designers</em> by obsession.</h2>
+        <p class="lede">Fairgrain started in 2008 as a two-person finish carpentry crew. Today we're a team of designers, carpenters and project leads who still care about the details nobody else sees.</p>
+        <p>We keep our own crews instead of chasing the lowest subcontractor bid, so the people who start your project are the people who finish it.</p>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>In-house design team</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>Fixed-price contracts</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>Permits handled for you</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>Dust-controlled job sites</li>
+        </ul>
+        <div class="sig">
+          <div><span class="sig-name">Sam Reyes</span><small>Founder &amp; master carpenter</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="pad" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <div class="rv"><span class="eyebrow">Recent projects</span><h2>A few rooms <em>we're proud of.</em></h2></div>
+        <p class="lede rv d1">Every finish, joint and fixture chosen with our clients, and built to last decades, not just look good at handover.</p>
+      </div>
+      <div class="gallery">
+        <figure class="big rv"><img src="https://images.unsplash.com/photo-1786053538161-501fbdd89629?w=1400&q=75&auto=format&fit=crop" alt="Kitchen with large island opening onto a patio" loading="lazy"><figcaption>Open-plan kitchen · Cedar Falls</figcaption></figure>
+        <figure class="rv d1"><img src="https://images.unsplash.com/photo-1774199496664-a9690967be5a?w=800&q=75&auto=format&fit=crop" alt="Living room with fireplace and large windows" loading="lazy"><figcaption>Fireplace surround · North Ridge</figcaption></figure>
+        <figure class="tall rv d2"><img src="https://images.unsplash.com/photo-1765745518673-b562b7304a53?w=800&q=75&auto=format&fit=crop" alt="Bathroom with marble and walnut accents" loading="lazy"><figcaption>Primary ensuite · Lakeshore</figcaption></figure>
+        <figure class="rv d1"><img src="https://images.unsplash.com/photo-1671197244266-73129c97c096?w=800&q=75&auto=format&fit=crop" alt="Modern kitchen with marble counters and stools" loading="lazy"><figcaption>Marble kitchen · Lakeshore</figcaption></figure>
+        <figure class="tall rv"><img src="https://images.unsplash.com/photo-1731168273756-e02cae42265b?w=800&q=75&auto=format&fit=crop" alt="Tradesperson cutting tile with an angle grinder" loading="lazy"><figcaption>Tile work in progress</figcaption></figure>
+        <figure class="wide rv d1"><img src="https://images.unsplash.com/photo-1649083048597-d7b4f1e8a386?w=1200&q=75&auto=format&fit=crop" alt="Large white kitchen with centre island and bar stools" loading="lazy"><figcaption>Family kitchen · Westbrook</figcaption></figure>
+        <figure class="tall rv d2"><img src="https://images.unsplash.com/photo-1760067538386-6df24ba8f7a3?w=800&q=75&auto=format&fit=crop" alt="Covered outdoor living space with lounge seating" loading="lazy"><figcaption>Covered patio · Harlow Valley</figcaption></figure>
+        <figure class="wide rv d1"><img src="https://images.unsplash.com/photo-1758565810954-7c97ad680715?w=1200&q=75&auto=format&fit=crop" alt="Modern kitchen and dining area with large windows" loading="lazy"><figcaption>Kitchen &amp; dining · Cedar Falls</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews pad" id="reviews">
+    <div class="wrap">
+      <div class="head">
+        <div class="rv"><span class="eyebrow">Client reviews</span><h2>Don't take <em>our word</em> for it.</h2></div>
+        <div class="rev-summary rv d1"><b>4.9</b><div><div class="stars" style="color:var(--clay)" aria-hidden="true">★★★★★</div><span>Average from 212 verified Google reviews</span></div></div>
+      </div>
+      <div class="rev-grid">
+        <article class="rev rv">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"They finished our kitchen two days early and the site was cleaner than our house usually is. Every single detail is better than we pictured."</p>
+          <footer><span class="avatar" style="background:var(--clay)">ML</span><div><b>Maya L.</b><span>Kitchen remodel · Westbrook</span></div></footer>
+        </article>
+        <article class="rev rv d1">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Our basement went from storage dungeon to the room everyone fights over. The fixed quote meant zero surprises. Not one."</p>
+          <footer><span class="avatar" style="background:var(--sage)">DK</span><div><b>Dev &amp; Kara P.</b><span>Basement finishing · North Ridge</span></div></footer>
+        </article>
+        <article class="rev rv d2">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Weekly photo updates while we were travelling made the whole thing stress-free. The built-in bookshelves are a piece of furniture."</p>
+          <footer><span class="avatar" style="background:var(--ink-3)">AT</span><div><b>Alex T.</b><span>Custom built-ins · Lakeshore</span></div></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pad" id="faq">
+    <div class="wrap faq">
+      <div class="rv">
+        <span class="eyebrow">Good questions</span>
+        <h2 style="margin-top:18px">Things people <em>ask us first.</em></h2>
+        <p class="lede" style="margin-top:22px">Still wondering about something? Call us. You'll talk to a real person, usually Sam.</p>
+        <a class="btn btn-line" href="tel:+15552140187" style="margin-top:30px">Call (555) 214-0187</a>
+      </div>
+      <div class="faq-list rv d1">
+        <details open><summary>How much does a renovation cost?<i>+</i></summary><p>Bathrooms typically range from $28k to $55k, kitchens from $55k to $120k, and basements from $45k to $90k depending on size and finishes. After your free consultation you'll get a fixed, line-item price, never a vague estimate.</p></details>
+        <details><summary>Do you handle design, or do I need an architect?<i>+</i></summary><p>Our in-house designers handle layouts, 3D renderings and material selections. For structural changes we coordinate with an engineer, all included in a single contract.</p></details>
+        <details><summary>How long will my project take?<i>+</i></summary><p>Most bathrooms take 3 to 5 weeks, kitchens 6 to 10 weeks and basements 6 to 9 weeks. You'll get a day-by-day schedule before we start, and 96% of our projects finish on time.</p></details>
+        <details><summary>Can we live at home during the work?<i>+</i></summary><p>Almost always. We seal off work areas, run air scrubbers to control dust, and for kitchens we can set up a temporary kitchenette so life goes on.</p></details>
+        <details><summary>Do you pull permits?<i>+</i></summary><p>Yes. We handle permits and inspections for every project that needs them, and the costs are included in your quote.</p></details>
+        <details><summary>What areas do you serve?<i>+</i></summary><p>Harlow Valley, Westbrook, Cedar Falls, Lakeshore, North Ridge and communities within roughly 40 km.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="dark pad" id="quote">
+    <div class="wrap quote">
+      <div class="rv">
+        <span class="eyebrow" style="color:var(--clay-hi)">Free consultation</span>
+        <h2>Let's talk about <em>your home.</em></h2>
+        <p class="lede">Tell us a little about your project. We'll get back within one business day to book a free, no-pressure visit.</p>
+        <ul class="contact-list">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></span><div><small>Call or text</small><a href="tel:+15552140187">(555) 214-0187</a></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span><div><small>Email</small><a href="mailto:hello@fairgrainbuild.com">hello@fairgrainbuild.com</a></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Showroom &amp; shop</small><span class="v">118 Mill Race Road, Harlow Valley</span></div></li>
+        </ul>
+      </div>
+
+      <form class="form rv d1" id="quoteForm" novalidate>
+        <div class="form-body">
+          <h3>Request your free estimate</h3>
+          <p>Takes about a minute. No obligation.</p>
+          <div class="fgrid">
+            <fieldset class="field full">
+              <legend>What are you planning?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="type" value="Kitchen" checked><span>Kitchen</span></label>
+                <label class="chip"><input type="radio" name="type" value="Bathroom"><span>Bathroom</span></label>
+                <label class="chip"><input type="radio" name="type" value="Basement"><span>Basement</span></label>
+                <label class="chip"><input type="radio" name="type" value="Built-ins"><span>Built-ins</span></label>
+                <label class="chip"><input type="radio" name="type" value="Deck"><span>Deck</span></label>
+                <label class="chip"><input type="radio" name="type" value="Other"><span>Something else</span></label>
+              </div>
+            </fieldset>
+            <div class="field"><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field full"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="fBudget">Budget</label>
+              <select id="fBudget" name="budget"><option>Not sure yet</option><option>Under $25k</option><option>$25k to $50k</option><option>$50k to $100k</option><option>$100k+</option></select></div>
+            <div class="field"><label for="fWhen">Timing</label>
+              <select id="fWhen" name="timing"><option>As soon as possible</option><option>In 1 to 3 months</option><option>In 3 to 6 months</option><option>Just exploring</option></select></div>
+            <div class="field full"><label for="fMsg">Tell us about your project</label><textarea id="fMsg" name="message" placeholder="e.g. We'd like to open up the kitchen and add an island..."></textarea></div>
+          </div>
+          <button class="btn btn-clay" type="submit">Send my request <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-note">We reply within one business day. Your details are never shared.</p>
+        </div>
+        <div class="form-done" role="status">
+          <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg></div>
+          <h3>Thanks, we've got it.</h3>
+          <p style="color:var(--stone);margin-top:10px">We'll be in touch within one business day to book your free consultation.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a href="#top" class="brand">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="currentColor" opacity=".12"/><path d="M12 30V11h17M12 20.5h12" stroke="#C8784E" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M29 17c-3 2-3 9 0 13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".55"/></svg>
+          <span class="brand-name">Fairgrain<small>Design + Build</small></span>
+        </a>
+        <p>Design-build general contractor for kitchens, bathrooms, basements and custom millwork in Harlow Valley and surrounding areas.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 00-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Houzz"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h4v6l8 3v11h-6v-6h-2v6H6z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li><a href="#services">Kitchen remodels</a></li><li><a href="#services">Bathroom renovations</a></li><li><a href="#services">Basement finishing</a></li><li><a href="#services">Custom built-ins</a></li><li><a href="#services">Decks &amp; outdoor</a></li></ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul><li>Harlow Valley</li><li>Westbrook</li><li>Cedar Falls</li><li>Lakeshore</li><li>North Ridge</li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+15552140187">(555) 214-0187</a></li><li><a href="mailto:hello@fairgrainbuild.com">hello@fairgrainbuild.com</a></li><li>Mon to Fri, 7:30 to 5:30</li><li>Showroom Sat by appointment</li></ul>
+      </div>
+    </div>
+    <div class="ftr-base">
+      <span>© <span id="yr">2026</span> Fairgrain Design + Build. All rights reserved.</span>
+      <span>Licensed · Bonded · Insured</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-line" href="tel:+15552140187">Call us</a>
+  <a class="btn btn-clay" href="#quote">Free estimate</a>
+</div>
+
+<script>
+(function () {
+  // Header goes solid after scrolling past the top of the hero
+  var hdr = document.getElementById('hdr');
+  function onScroll() { hdr.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Mobile menu
+  var menuBtn = document.getElementById('menuBtn');
+  menuBtn.addEventListener('click', function () {
+    var open = hdr.classList.toggle('menu-open');
+    menuBtn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  document.querySelectorAll('#nav a').forEach(function (a) {
+    a.addEventListener('click', function () { hdr.classList.remove('menu-open'); menuBtn.setAttribute('aria-expanded', false); document.body.style.overflow = ''; });
+  });
+
+  // Reveal on scroll + stat counters
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function count(el) {
+    var end = +el.dataset.count, t0 = null, dur = 1600;
+    if (reduced) { el.textContent = end; return; }
+    function step(t) { if (!t0) t0 = t; var p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(e.target);
+    });
+  }, { threshold: .15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+
+  // Before / after slider
+  var ba = document.getElementById('ba'), range = document.getElementById('baRange');
+  function setPos(v) { v = Math.max(0, Math.min(100, v)); ba.style.setProperty('--pos', v + '%'); range.value = v; }
+  function fromPointer(x) { var r = ba.getBoundingClientRect(); setPos((x - r.left) / r.width * 100); }
+  var dragging = false;
+  ba.addEventListener('pointerdown', function (e) { dragging = true; ba.classList.add('dragging'); ba.setPointerCapture(e.pointerId); fromPointer(e.clientX); stopHint(); });
+  ba.addEventListener('pointermove', function (e) { if (dragging) fromPointer(e.clientX); });
+  ['pointerup', 'pointercancel'].forEach(function (t) { ba.addEventListener(t, function () { dragging = false; ba.classList.remove('dragging'); }); });
+  range.addEventListener('input', function () { setPos(+range.value); stopHint(); });
+
+  // A gentle nudge the first time the slider comes into view, so people know it moves
+  var hintTimer = null, hinted = false;
+  function stopHint() { if (hintTimer) { cancelAnimationFrame(hintTimer); hintTimer = null; } hinted = true; }
+  function playHint() {
+    if (hinted || reduced) return; hinted = true;
+    var keys = [[0, 50], [700, 28], [1500, 72], [2200, 50]], t0 = null;
+    function frame(t) {
+      if (!t0) t0 = t; var e = t - t0, i = 1;
+      while (i < keys.length - 1 && e > keys[i][0]) i++;
+      var a = keys[i - 1], b = keys[i], p = Math.min(1, Math.max(0, (e - a[0]) / (b[0] - a[0])));
+      p = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+      setPos(a[1] + (b[1] - a[1]) * p);
+      if (e < keys[keys.length - 1][0]) hintTimer = requestAnimationFrame(frame); else hintTimer = null;
+    }
+    hintTimer = requestAnimationFrame(frame);
+  }
+  new IntersectionObserver(function (es, obs) { if (es[0].isIntersecting) { setTimeout(playHint, 400); obs.disconnect(); } }, { threshold: .6 }).observe(ba);
+
+  // Projects shown in the before/after tabs.
+  // To use real client photos, point before/after at your own image files (same size & angle works best).
+  var projects = [
+    { key: 'kitchen', loc: 'Westbrook · Completed 2026', title: 'The Alder Street Kitchen',
+      desc: 'A cramped 1990s kitchen opened up into the heart of the home: a new steel window over the sink, a fluted oak island that seats three, and storage for everything.',
+      time: '7 weeks', cost: '$68k to $82k',
+      scope: ['Custom cabinetry', 'Quartz counters', 'Zellige backsplash', 'Steel window', 'Wide-plank oak floor', 'Lighting plan'],
+      quote: 'We cook together every night now. It doesn\'t even feel like the same house.', who: 'The Laurent family',
+      altB: 'Before: dated kitchen with orange oak cabinets and laminate counters', altA: 'After: kitchen with deep green cabinets, oak shelving and a fluted oak island' },
+    { key: 'bathroom', loc: 'Lakeshore · Completed 2025', title: 'The Birchwood Ensuite',
+      desc: 'A pink-tiled 1987 bathroom reimagined as a calm, hotel-style ensuite with a floating walnut double vanity, a freestanding tub and a curbless glass shower.',
+      time: '4 weeks', cost: '$38k to $46k',
+      scope: ['Curbless shower', 'Heated floors', 'Floating vanity', 'Freestanding tub', 'Full waterproofing', 'Brass fixtures'],
+      quote: 'It feels like a spa we get to use every morning. The heated floor alone was worth it.', who: 'Priya & Tom H.',
+      altB: 'Before: bathroom with pink tile, oak vanity and a framed shower', altA: 'After: bathroom with walnut vanity, round brass mirrors, freestanding tub and glass shower' },
+    { key: 'basement', loc: 'North Ridge · Completed 2026', title: 'The Ridgeview Family Room',
+      desc: 'An unfinished, damp basement turned into the room the whole family fights over, with a built-in media wall, warm lighting and moisture-proof flooring.',
+      time: '8 weeks', cost: '$54k to $65k',
+      scope: ['Moisture control', 'Insulation & drywall', 'Built-in media wall', 'Recessed lighting', 'Egress window', 'Luxury vinyl plank'],
+      quote: 'We gained a whole floor of living space. The kids basically live down there now.', who: 'Dev & Kara P.',
+      altB: 'Before: unfinished basement with block walls, ductwork and a water heater', altA: 'After: finished basement family room with a built-in media wall and sofa' }
+  ];
+  var $ = function (id) { return document.getElementById(id); };
+  var proj = $('proj'), imgA = $('baAfter'), imgB = $('baBefore');
+  function show(i) {
+    var p = projects[i];
+    imgA.src = 'assets/before-after/' + p.key + '-after.svg'; imgA.alt = p.altA;
+    imgB.src = 'assets/before-after/' + p.key + '-before.svg'; imgB.alt = p.altB;
+    $('pLoc').textContent = p.loc; $('pTitle').textContent = p.title; $('pDesc').textContent = p.desc;
+    $('pTime').textContent = p.time; $('pCost').textContent = p.cost;
+    $('pScope').innerHTML = p.scope.map(function (s) { return '<li>' + s + '</li>'; }).join('');
+    $('pQuote').innerHTML = '"' + p.quote + '"<cite>' + p.who + '</cite>';
+    proj.classList.remove('fade-swap'); void proj.offsetWidth; proj.classList.add('fade-swap');
+    setPos(50);
+  }
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', t === tab); });
+      show(+tab.dataset.p);
+    });
+  });
+  // Preload the other pairs so switching tabs is instant
+  projects.forEach(function (p) { ['before', 'after'].forEach(function (s) { new Image().src = 'assets/before-after/' + p.key + '-' + s + '.svg'; }); });
+  show(0);
+
+  // Quote form: demo submit. Connect to Formspree / Netlify Forms / your inbox for production.
+  var form = $('quoteForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var bad = Array.prototype.filter.call(form.querySelectorAll('[required]'), function (f) { return !f.value.trim() || (f.type === 'email' && !/^\S+@\S+\.\S+$/.test(f.value)); });
+    form.querySelectorAll('input, select, textarea').forEach(function (f) { f.style.borderColor = ''; });
+    if (bad.length) { bad.forEach(function (f) { f.style.borderColor = '#C0492F'; }); bad[0].focus(); return; }
+    form.classList.add('sent');
+  });
+
+  $('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

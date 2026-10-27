@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bathroom after renovation: floating walnut vanity, round brass mirrors, freestanding tub and glass walk-in shower">
+  <defs>
+    <linearGradient id="sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D9D1C6"/><stop offset="1" stop-color="#E7E0D6"/></linearGradient>
+    <linearGradient id="sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#4E6A5C"/><stop offset="1" stop-color="#5F7D6D"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8D0C4"/><stop offset="1" stop-color="#C2B8AA"/></linearGradient>
+    <linearGradient id="walnut" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7E5536"/><stop offset="1" stop-color="#5E3D26"/></linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E2C48A"/><stop offset=".5" stop-color="#C39A55"/><stop offset="1" stop-color="#9C7638"/></linearGradient>
+    <linearGradient id="mirror" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEF1EE"/><stop offset=".55" stop-color="#D3DAD6"/><stop offset="1" stop-color="#C2CBC6"/></linearGradient>
+    <linearGradient id="tub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E7E3DC"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".32"/><stop offset=".5" stop-color="#E8F2F0" stop-opacity=".12"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".26"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#FFE6B0" stop-opacity=".7"/><stop offset="1" stop-color="#FFE6B0" stop-opacity="0"/></radialGradient>
+    <pattern id="slab" width="140" height="70" patternUnits="userSpaceOnUse"><rect width="140" height="70" fill="#ECE6DD"/><rect x=".5" y=".5" width="139" height="69" fill="none" stroke="#DCD3C6" stroke-width="1"/><path d="M10 50 C40 40 70 58 120 36" stroke="#E2DACE" stroke-width="1.2" fill="none"/></pattern>
+    <pattern id="zellige" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#4F6B5D"/><rect x="1" y="1" width="20" height="20" rx="1.5" fill="#5D7B6B"/><rect x="3" y="3" width="8" height="4" fill="#fff" opacity=".14"/></pattern>
+  </defs>
+
+  <polygon points="0,0 1200,0 1090,50 110,50" fill="#F0ECE6"/>
+  <polygon points="0,0 110,50 110,650 0,800" fill="url(#sideL)"/>
+  <polygon points="1200,0 1090,50 1090,650 1200,800" fill="url(#sideR)"/>
+  <rect x="110" y="50" width="980" height="600" fill="url(#slab)"/>
+
+  <!-- floor tile -->
+  <polygon points="110,650 1090,650 1200,800 0,800" fill="url(#floor)"/>
+  <g stroke="#B6AC9E" stroke-width="1.2">
+    <line x1="250" y1="650" x2="171" y2="800"/><line x1="390" y1="650" x2="343" y2="800"/><line x1="530" y1="650" x2="514" y2="800"/><line x1="670" y1="650" x2="686" y2="800"/><line x1="810" y1="650" x2="857" y2="800"/><line x1="950" y1="650" x2="1029" y2="800"/>
+    <line x1="84" y1="690" x2="1116" y2="690"/><line x1="46" y1="740" x2="1154" y2="740"/>
+  </g>
+
+  <!-- shower zone: green zellige + niche -->
+  <rect x="868" y="50" width="222" height="600" fill="url(#zellige)"/>
+  <rect x="930" y="300" width="110" height="70" fill="#3F584B"/><rect x="930" y="366" width="110" height="4" fill="#C9BFAF"/>
+  <rect x="944" y="326" width="16" height="40" rx="4" fill="#E9E1D3"/><rect x="966" y="334" width="16" height="32" rx="4" fill="#C8784E"/><rect x="988" y="320" width="18" height="46" rx="4" fill="#F4F1EA"/>
+  <line x1="980" y1="50" x2="980" y2="128" stroke="url(#brass)" stroke-width="5"/><ellipse cx="980" cy="134" rx="38" ry="7" fill="url(#brass)"/>
+  <g stroke="#DCEBEA" stroke-width="1.5" opacity=".55"><line x1="958" y1="146" x2="950" y2="220"/><line x1="972" y1="146" x2="968" y2="240"/><line x1="988" y1="146" x2="992" y2="230"/><line x1="1002" y1="146" x2="1010" y2="214"/></g>
+  <rect x="1010" y="420" width="10" height="44" rx="5" fill="url(#brass)"/>
+  <!-- glass panel -->
+  <rect x="858" y="70" width="10" height="580" fill="url(#brass)"/>
+  <rect x="868" y="70" width="190" height="580" fill="url(#glass)"/>
+  <rect x="868" y="70" width="190" height="4" fill="url(#brass)"/>
+  <path d="M900 90 L960 90 L900 190Z" fill="#fff" opacity=".12"/>
+
+  <!-- round mirrors -->
+  <circle cx="500" cy="270" r="92" fill="url(#brass)"/><circle cx="500" cy="270" r="85" fill="url(#mirror)"/><path d="M450 220 L520 200 L460 300Z" fill="#fff" opacity=".22"/>
+  <circle cx="720" cy="270" r="92" fill="url(#brass)"/><circle cx="720" cy="270" r="85" fill="url(#mirror)"/><path d="M670 220 L740 200 L680 300Z" fill="#fff" opacity=".22"/>
+  <!-- sconces -->
+  <circle cx="380" cy="250" r="90" fill="url(#glow)"/><circle cx="610" cy="250" r="90" fill="url(#glow)"/><circle cx="840" cy="250" r="70" fill="url(#glow)" opacity=".7"/>
+  <g><rect x="376" y="232" width="8" height="18" fill="url(#brass)"/><rect x="368" y="214" width="24" height="40" rx="12" fill="#FFF6E2"/><rect x="606" y="232" width="8" height="18" fill="url(#brass)"/><rect x="598" y="214" width="24" height="40" rx="12" fill="#FFF6E2"/></g>
+
+  <!-- floating walnut vanity -->
+  <rect x="372" y="398" width="476" height="14" fill="#F8F6F2"/>
+  <rect x="380" y="412" width="460" height="118" fill="url(#walnut)"/>
+  <g stroke="#4B301D" stroke-width="2.5"><line x1="610" y1="412" x2="610" y2="530"/><line x1="380" y1="468" x2="840" y2="468"/></g>
+  <g fill="#9A6C48" opacity=".7"><rect x="440" y="416" width="110" height="3" rx="1.5"/><rect x="670" y="416" width="110" height="3" rx="1.5"/><rect x="440" y="472" width="110" height="3" rx="1.5"/><rect x="670" y="472" width="110" height="3" rx="1.5"/></g>
+  <ellipse cx="610" cy="560" rx="250" ry="10" fill="#000" opacity=".1"/>
+  <path d="M490 398 L490 376 Q490 362 504 362 L520 362" stroke="url(#brass)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M710 398 L710 376 Q710 362 724 362 L740 362" stroke="url(#brass)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- vanity decor -->
+  <rect x="790" y="370" width="22" height="28" rx="4" fill="#EDE6DA"/><path d="M801 370 C796 350 790 344 784 338 M801 370 C806 352 812 346 818 340" stroke="#6E9A68" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="400" y="378" width="14" height="20" rx="3" fill="#C8784E"/><rect x="418" y="384" width="14" height="14" rx="3" fill="#D6CBB8"/>
+
+  <!-- freestanding tub -->
+  <ellipse cx="236" cy="650" rx="140" ry="12" fill="#000" opacity=".12"/>
+  <path d="M104 540 L366 540 Q362 610 330 636 Q300 650 236 650 Q172 650 142 636 Q110 610 104 540Z" fill="url(#tub)"/>
+  <rect x="98" y="532" width="274" height="12" rx="6" fill="#FFFFFF"/>
+  <path d="M316 532 L316 470 Q316 450 336 450 Q352 450 352 466" stroke="url(#brass)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M120 540 L174 540 L174 600 L140 600Z" fill="#E4D7C3" opacity=".9"/><path d="M128 540 L128 596" stroke="#D2C2AA" stroke-width="2"/>
+  <!-- tall plant -->
+  <rect x="160" y="420" width="0" height="0"/>
+  <path d="M138 500 C120 440 92 420 70 400 M140 500 C142 430 150 392 170 360 M142 500 C170 460 196 448 216 440 M138 500 C110 470 90 470 72 470" stroke="#55804F" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- bath mat -->
+  <polygon points="470,690 760,690 780,740 450,740" fill="#E9E1D3"/><g stroke="#D4C8B5" stroke-width="2"><line x1="470" y1="702" x2="762" y2="702"/><line x1="460" y1="728" x2="772" y2="728"/></g>
+
+  <rect width="1200" height="800" fill="#FFD9A0" opacity=".04"/>
+</svg>

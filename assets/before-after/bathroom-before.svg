@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Bathroom before renovation: pink 1980s tile, oak vanity, hollywood light bar and framed fibreglass shower">
+  <defs>
+    <linearGradient id="sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B9C4AE"/><stop offset="1" stop-color="#C6D0BA"/></linearGradient>
+    <linearGradient id="sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#B3BEA8"/><stop offset="1" stop-color="#C3CDB7"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D5CBB1"/><stop offset="1" stop-color="#BDB297"/></linearGradient>
+    <linearGradient id="oakOld" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9893F"/><stop offset="1" stop-color="#A86A2E"/></linearGradient>
+    <linearGradient id="mirror" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9D0CF"/><stop offset="1" stop-color="#A9B2B1"/></linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6E8E9"/><stop offset="1" stop-color="#A7ACAF"/></linearGradient>
+    <linearGradient id="pinkTub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9B5B0"/><stop offset="1" stop-color="#D59C97"/></linearGradient>
+    <pattern id="pinkTile" width="26" height="26" patternUnits="userSpaceOnUse"><rect width="26" height="26" fill="#BE8F8B"/><rect x="1.3" y="1.3" width="23.4" height="23.4" fill="#E7BDB8"/><rect x="3" y="3" width="8" height="3" fill="#fff" opacity=".25"/></pattern>
+    <pattern id="mint" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#CAD7C0"/><path d="M20 8 l4 8 l-4 8 l-4 -8z" fill="#B5C4A9" opacity=".7"/></pattern>
+    <pattern id="ribbed" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#E5E8E0"/><rect width="4" height="10" fill="#CED3C9"/></pattern>
+    <radialGradient id="bulb"><stop offset="0" stop-color="#FFF8DC" stop-opacity=".6"/><stop offset="1" stop-color="#FFF8DC" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <polygon points="0,0 1200,0 1090,50 110,50" fill="#D8D8C8"/>
+  <polygon points="0,0 110,50 110,650 0,800" fill="url(#sideL)"/>
+  <polygon points="1200,0 1090,50 1090,650 1200,800" fill="url(#sideR)"/>
+  <rect x="110" y="50" width="980" height="600" fill="url(#mint)"/>
+  <rect x="110" y="392" width="980" height="258" fill="url(#pinkTile)"/>
+  <rect x="110" y="380" width="980" height="14" fill="#8E5D6A"/><rect x="110" y="380" width="980" height="3" fill="#B2808C"/>
+  <path d="M760 50 C770 90 750 120 770 160" stroke="#9EA88F" stroke-width="2" fill="none"/>
+
+  <!-- floor: patterned sheet vinyl -->
+  <polygon points="110,650 1090,650 1200,800 0,800" fill="url(#floor)"/>
+  <g stroke="#ADA185" stroke-width="1.2">
+    <line x1="250" y1="650" x2="171" y2="800"/><line x1="390" y1="650" x2="343" y2="800"/><line x1="530" y1="650" x2="514" y2="800"/><line x1="670" y1="650" x2="686" y2="800"/><line x1="810" y1="650" x2="857" y2="800"/><line x1="950" y1="650" x2="1029" y2="800"/>
+    <line x1="84" y1="690" x2="1116" y2="690"/><line x1="46" y1="740" x2="1154" y2="740"/>
+  </g>
+  <g fill="#A69878" opacity=".5"><circle cx="320" cy="670" r="5"/><circle cx="460" cy="715" r="6"/><circle cx="600" cy="670" r="5"/><circle cx="740" cy="715" r="6"/><circle cx="880" cy="670" r="5"/><circle cx="1000" cy="765" r="7"/><circle cx="190" cy="765" r="7"/><circle cx="600" cy="765" r="7"/></g>
+  <ellipse cx="610" cy="700" rx="110" ry="16" fill="#8E7F5C" opacity=".16"/>
+
+  <!-- framed fibreglass shower w/ ribbed glass -->
+  <rect x="868" y="110" width="222" height="540" fill="#EDE7DA"/>
+  <rect x="858" y="110" width="232" height="10" fill="#C7B479"/>
+  <rect x="868" y="120" width="96" height="530" fill="url(#ribbed)" opacity=".92"/><rect x="964" y="120" width="96" height="530" fill="url(#ribbed)" opacity=".85"/>
+  <g fill="#C7B479"><rect x="858" y="110" width="10" height="540"/><rect x="960" y="120" width="8" height="530"/><rect x="1056" y="120" width="8" height="530"/><rect x="858" y="640" width="232" height="10"/></g>
+  <rect x="868" y="560" width="190" height="80" fill="#8E9A72" opacity=".18"/>
+
+  <!-- big mirror with desilvering + hollywood bar -->
+  <rect x="372" y="168" width="476" height="206" fill="url(#mirror)"/>
+  <path d="M372 168 L430 168 C420 180 400 186 390 200 C384 190 376 186 372 184Z" fill="#5E6261" opacity=".55"/><path d="M848 374 L800 374 C808 360 830 356 836 344 C842 356 846 360 848 362Z" fill="#5E6261" opacity=".5"/>
+  <path d="M420 200 L520 180 L440 300Z" fill="#fff" opacity=".15"/>
+  <circle cx="610" cy="140" r="220" fill="url(#bulb)"/>
+  <rect x="392" y="128" width="436" height="26" rx="4" fill="url(#chrome)"/>
+  <g fill="#FFF6D8" stroke="#D8D2BA"><circle cx="430" cy="141" r="13"/><circle cx="500" cy="141" r="13"/><circle cx="570" cy="141" r="13"/><circle cx="650" cy="141" r="13"/><circle cx="720" cy="141" r="13"/><circle cx="790" cy="141" r="13"/></g>
+  <circle cx="650" cy="141" r="13" fill="#9B978A"/>
+
+  <!-- oak vanity on floor + cultured marble top -->
+  <rect x="372" y="398" width="476" height="16" fill="#EDE5D3"/><path d="M400 404 C460 400 500 410 560 404 M650 406 C700 400 760 410 830 404" stroke="#D4C2A1" stroke-width="2" fill="none"/>
+  <rect x="380" y="414" width="460" height="226" fill="url(#oakOld)"/>
+  <rect x="380" y="630" width="460" height="20" fill="#4B3A26"/>
+  <g stroke="#8C561F" stroke-width="3" fill="none"><path d="M398 616 L398 470 Q450 436 500 470 L500 616Z"/><path d="M516 616 L516 470 Q568 436 618 470 L618 616Z"/><rect x="636" y="430" width="186" height="44"/><rect x="636" y="490" width="186" height="56"/><rect x="636" y="560" width="186" height="60"/></g>
+  <g fill="#8A6B36"><circle cx="490" cy="540" r="5"/><circle cx="526" cy="540" r="5"/><circle cx="729" cy="452" r="5"/><circle cx="729" cy="518" r="5"/><circle cx="729" cy="590" r="5"/></g>
+  <path d="M598 398 L598 384 L622 384" stroke="url(#chrome)" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="580" y="392" width="40" height="8" rx="3" fill="#BABEC0"/>
+  <rect x="420" y="372" width="22" height="26" rx="4" fill="#E2A9B7"/><rect x="760" y="378" width="40" height="20" rx="3" fill="#CFC6B2"/>
+
+  <!-- pink built-in tub with tile surround -->
+  <rect x="110" y="540" width="262" height="110" fill="url(#pinkTile)"/>
+  <rect x="104" y="526" width="274" height="18" fill="url(#pinkTub)"/><rect x="104" y="526" width="274" height="5" fill="#F2CDC9"/>
+  <path d="M312 526 L312 500 L340 500" stroke="url(#chrome)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <line x1="104" y1="96" x2="378" y2="96" stroke="url(#chrome)" stroke-width="5"/>
+  <path d="M110 98 L180 98 L176 520 Q160 528 140 520 Q124 528 110 520Z" fill="#C9A4A0"/>
+  <g stroke="#B08884" stroke-width="2"><line x1="128" y1="100" x2="126" y2="520"/><line x1="148" y1="100" x2="146" y2="520"/><line x1="166" y1="100" x2="164" y2="520"/></g>
+  <g fill="#E8D0CD" opacity=".7"><circle cx="138" cy="160" r="6"/><circle cx="158" cy="230" r="6"/><circle cx="136" cy="300" r="6"/><circle cx="160" cy="370" r="6"/><circle cx="140" cy="440" r="6"/></g>
+  <!-- grout mildew -->
+  <rect x="190" y="520" width="170" height="6" fill="#4E4A3A" opacity=".25"/>
+
+  <rect width="1200" height="800" fill="#5C5A44" opacity=".13"/>
+</svg>

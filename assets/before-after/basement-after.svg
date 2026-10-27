@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Basement after renovation: finished family room with built-in media wall, recessed lighting and new flooring">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFEBE4"/><stop offset="1" stop-color="#E4DED4"/></linearGradient>
+    <linearGradient id="sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D6CFC3"/><stop offset="1" stop-color="#E3DDD3"/></linearGradient>
+    <linearGradient id="sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#D2CABE"/><stop offset="1" stop-color="#E0D9CE"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CDB28C"/><stop offset="1" stop-color="#B3966F"/></linearGradient>
+    <linearGradient id="built" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34404B"/><stop offset="1" stop-color="#28323B"/></linearGradient>
+    <linearGradient id="tv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1A1F24"/><stop offset=".5" stop-color="#262D34"/><stop offset="1" stop-color="#15191D"/></linearGradient>
+    <linearGradient id="sofa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C7BCAB"/><stop offset="1" stop-color="#AFA392"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE8EC"/><stop offset="1" stop-color="#B8CCB4"/></linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E2C48A"/><stop offset="1" stop-color="#A57E3E"/></linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1D2" stop-opacity=".45"/><stop offset="1" stop-color="#FFF1D2" stop-opacity="0"/></linearGradient>
+    <linearGradient id="led" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD99A" stop-opacity=".55"/><stop offset="1" stop-color="#FFD99A" stop-opacity="0"/></linearGradient>
+  </defs>
+
+  <polygon points="0,0 1200,0 1090,50 110,50" fill="#F4F1EC"/>
+  <polygon points="0,0 110,50 110,650 0,800" fill="url(#sideL)"/>
+  <polygon points="1200,0 1090,50 1090,650 1200,800" fill="url(#sideR)"/>
+  <rect x="110" y="50" width="980" height="600" fill="url(#wall)"/>
+  <!-- recessed lights -->
+  <g fill="#FFF8E6"><ellipse cx="300" cy="24" rx="16" ry="4"/><ellipse cx="600" cy="24" rx="16" ry="4"/><ellipse cx="900" cy="24" rx="16" ry="4"/></g>
+  <polygon points="286,26 314,26 380,330 220,330" fill="url(#cone)"/><polygon points="886,26 914,26 980,330 820,330" fill="url(#cone)"/>
+
+  <!-- floor: LVP -->
+  <polygon points="110,650 1090,650 1200,800 0,800" fill="url(#floor)"/>
+  <g stroke="#97795A" stroke-width="1.3" opacity=".5">
+    <line x1="180" y1="650" x2="86" y2="800"/><line x1="250" y1="650" x2="171" y2="800"/><line x1="320" y1="650" x2="257" y2="800"/><line x1="390" y1="650" x2="343" y2="800"/><line x1="460" y1="650" x2="429" y2="800"/><line x1="530" y1="650" x2="514" y2="800"/><line x1="600" y1="650" x2="600" y2="800"/><line x1="670" y1="650" x2="686" y2="800"/><line x1="740" y1="650" x2="771" y2="800"/><line x1="810" y1="650" x2="857" y2="800"/><line x1="880" y1="650" x2="943" y2="800"/><line x1="950" y1="650" x2="1029" y2="800"/><line x1="1020" y1="650" x2="1114" y2="800"/>
+  </g>
+  <rect x="110" y="640" width="980" height="10" fill="#F6F3EE"/>
+
+  <!-- egress window -->
+  <rect x="134" y="84" width="132" height="116" fill="#F7F4EF"/><rect x="142" y="92" width="116" height="100" fill="url(#sky)"/>
+  <path d="M142 160 C170 150 200 158 258 146 L258 192 L142 192Z" fill="#8FAE88"/><rect x="198" y="92" width="4" height="100" fill="#F7F4EF"/>
+  <rect x="126" y="200" width="148" height="7" fill="#EDE8E0"/>
+
+  <!-- framed art on right -->
+  <rect x="950" y="120" width="110" height="140" fill="#1F2328"/><rect x="958" y="128" width="94" height="124" fill="#F2EDE4"/>
+  <circle cx="1005" cy="180" r="28" fill="#C8784E"/><rect x="972" y="206" width="66" height="30" fill="#5F7D6D"/>
+  <!-- floor lamp -->
+  <line x1="1010" y1="360" x2="1010" y2="640" stroke="#26241F" stroke-width="4"/><ellipse cx="1010" cy="642" rx="28" ry="5" fill="#26241F"/>
+  <path d="M976 360 L1044 360 L1032 312 L988 312Z" fill="#F3E7CF"/><circle cx="1010" cy="380" r="80" fill="#FFE6B0" opacity=".18"/>
+
+  <!-- built-in media wall -->
+  <rect x="290" y="96" width="620" height="544" fill="url(#built)"/>
+  <rect x="290" y="96" width="620" height="10" fill="#3D4955"/>
+  <polygon points="300,106 900,106 880,170 320,170" fill="url(#led)"/>
+  <!-- shelves left/right -->
+  <g fill="#3D4955"><rect x="306" y="186" width="124" height="6"/><rect x="306" y="276" width="124" height="6"/><rect x="306" y="366" width="124" height="6"/><rect x="770" y="186" width="124" height="6"/><rect x="770" y="276" width="124" height="6"/><rect x="770" y="366" width="124" height="6"/></g>
+  <g>
+    <rect x="316" y="140" width="12" height="46" fill="#C8784E"/><rect x="330" y="148" width="10" height="38" fill="#E9E1D3"/><rect x="342" y="136" width="14" height="50" fill="#5F7D6D"/><rect x="358" y="152" width="9" height="34" fill="#D8B26E"/>
+    <path d="M392 186 Q392 160 410 160 Q428 160 428 186Z" fill="#E9E1D3"/>
+    <rect x="320" y="236" width="40" height="40" rx="3" fill="#E9E1D3"/><path d="M380 276 L384 244 L416 244 L420 276Z" fill="#C8784E"/>
+    <rect x="316" y="320" width="10" height="46" fill="#E9E1D3"/><rect x="328" y="326" width="12" height="40" fill="#8B5A3C"/><rect x="342" y="316" width="12" height="50" fill="#D8B26E"/><path d="M386 366 C380 340 370 336 364 330 M386 366 C392 342 402 336 408 330" stroke="#6E9A68" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="376" y="352" width="20" height="14" fill="#E9E1D3"/>
+    <path d="M780 186 Q780 162 802 162 Q824 162 824 186Z" fill="#C8784E"/><rect x="838" y="140" width="11" height="46" fill="#E9E1D3"/><rect x="851" y="148" width="13" height="38" fill="#5F7D6D"/><rect x="866" y="136" width="10" height="50" fill="#D8B26E"/>
+    <rect x="782" y="232" width="12" height="44" fill="#8B5A3C"/><rect x="796" y="240" width="10" height="36" fill="#E9E1D3"/><rect x="808" y="228" width="14" height="48" fill="#C8784E"/><rect x="846" y="244" width="40" height="32" rx="3" fill="#E9E1D3"/>
+    <rect x="786" y="330" width="30" height="36" rx="12" fill="#E9E1D3"/><rect x="832" y="318" width="10" height="48" fill="#5F7D6D"/><rect x="844" y="326" width="12" height="40" fill="#D8B26E"/><rect x="858" y="322" width="11" height="44" fill="#E9E1D3"/>
+  </g>
+  <!-- TV -->
+  <rect x="452" y="196" width="296" height="172" rx="3" fill="url(#tv)"/><path d="M470 210 L560 210 L480 340Z" fill="#fff" opacity=".05"/>
+  <!-- lower cabinets -->
+  <rect x="290" y="420" width="620" height="8" fill="#3D4955"/>
+  <g stroke="#1E262D" stroke-width="2.5"><line x1="445" y1="428" x2="445" y2="640"/><line x1="600" y1="428" x2="600" y2="640"/><line x1="755" y1="428" x2="755" y2="640"/></g>
+  <g fill="url(#brass)"><rect x="430" y="500" width="5" height="40" rx="2.5"/><rect x="455" y="500" width="5" height="40" rx="2.5"/><rect x="740" y="500" width="5" height="40" rx="2.5"/><rect x="765" y="500" width="5" height="40" rx="2.5"/></g>
+
+  <!-- rug -->
+  <polygon points="260,690 940,690 1010,790 190,790" fill="#E6DCCB"/><polygon points="282,698 918,698 980,782 220,782" fill="none" stroke="#C8784E" stroke-width="3" opacity=".6"/>
+  <!-- sofa (back view) -->
+  <ellipse cx="600" cy="768" rx="360" ry="14" fill="#000" opacity=".14"/>
+  <rect x="236" y="606" width="728" height="156" rx="26" fill="url(#sofa)"/>
+  <rect x="236" y="606" width="728" height="18" rx="9" fill="#D3C9B9"/>
+  <path d="M330 606 Q330 560 370 560 L440 560 Q470 560 466 600Z" fill="#C8784E"/><path d="M736 600 Q732 556 764 556 L832 560 Q872 562 868 606Z" fill="#6F8C7B"/><path d="M560 606 Q562 576 590 574 L640 574 Q664 576 664 606Z" fill="#E9E1D3"/>
+  <g stroke="#9E927F" stroke-width="2" opacity=".6"><line x1="600" y1="630" x2="600" y2="756"/></g>
+  <rect x="244" y="756" width="10" height="20" fill="#26241F"/><rect x="946" y="756" width="10" height="20" fill="#26241F"/>
+
+  <rect width="1200" height="800" fill="#FFD9A0" opacity=".04"/>
+</svg>

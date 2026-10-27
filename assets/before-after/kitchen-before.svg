@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Kitchen before renovation: dated orange oak cabinets, laminate counters, striped wallpaper and worn vinyl floor">
+  <defs>
+    <linearGradient id="sideL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B9AC88"/><stop offset="1" stop-color="#CBBE98"/></linearGradient>
+    <linearGradient id="sideR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#B4A783"/><stop offset="1" stop-color="#C8BB95"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFC4A8"/><stop offset="1" stop-color="#B8AC8D"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D3D6D2"/><stop offset="1" stop-color="#B7BCB4"/></linearGradient>
+    <linearGradient id="oakOld" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9893F"/><stop offset="1" stop-color="#A86A2E"/></linearGradient>
+    <linearGradient id="almond" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ECE3C8"/><stop offset="1" stop-color="#D6CCAF"/></linearGradient>
+    <radialGradient id="tube"><stop offset="0" stop-color="#F2F7EE" stop-opacity=".5"/><stop offset="1" stop-color="#F2F7EE" stop-opacity="0"/></radialGradient>
+    <pattern id="paper" width="44" height="44" patternUnits="userSpaceOnUse"><rect width="44" height="44" fill="#D9CCA2"/><rect x="0" width="12" height="44" fill="#CDBE92"/><rect x="12" width="2" height="44" fill="#BCA97A" opacity=".6"/><circle cx="29" cy="12" r="3.2" fill="#B98C68" opacity=".55"/><circle cx="29" cy="34" r="3.2" fill="#8E9A6A" opacity=".5"/></pattern>
+    <pattern id="tile4" width="24" height="24" patternUnits="userSpaceOnUse"><rect width="24" height="24" fill="#7F7562"/><rect x="1.4" y="1.4" width="21.2" height="21.2" fill="#E3D7BA"/><rect x="3" y="3" width="8" height="3" fill="#fff" opacity=".25"/></pattern>
+    <pattern id="raised" width="110" height="10" patternUnits="userSpaceOnUse"><rect width="110" height="10" fill="none"/></pattern>
+  </defs>
+
+  <!-- room shell -->
+  <polygon points="0,0 1200,0 1090,50 110,50" fill="#D7D0BC"/>
+  <polygon points="0,0 110,50 110,650 0,800" fill="url(#sideL)"/>
+  <polygon points="1200,0 1090,50 1090,650 1200,800" fill="url(#sideR)"/>
+  <rect x="110" y="50" width="980" height="600" fill="url(#paper)"/>
+  <!-- water stain + peeling seam -->
+  <ellipse cx="880" cy="30" rx="70" ry="14" fill="#9C7A45" opacity=".28"/><ellipse cx="880" cy="30" rx="44" ry="8" fill="#8A6A38" opacity=".2"/>
+  <path d="M110 50 L176 50 C170 70 158 84 150 104 C140 90 124 78 110 74Z" fill="#EFE6CB"/><path d="M176 50 C170 70 158 84 150 104" stroke="#A8966A" stroke-width="1.5" fill="none"/>
+
+  <!-- vinyl floor -->
+  <polygon points="110,650 1090,650 1200,800 0,800" fill="url(#floor)"/>
+  <g stroke="#A79B7C" stroke-width="1.3">
+    <line x1="180" y1="650" x2="86" y2="800"/><line x1="250" y1="650" x2="171" y2="800"/><line x1="320" y1="650" x2="257" y2="800"/><line x1="390" y1="650" x2="343" y2="800"/><line x1="460" y1="650" x2="429" y2="800"/><line x1="530" y1="650" x2="514" y2="800"/><line x1="600" y1="650" x2="600" y2="800"/><line x1="670" y1="650" x2="686" y2="800"/><line x1="740" y1="650" x2="771" y2="800"/><line x1="810" y1="650" x2="857" y2="800"/><line x1="880" y1="650" x2="943" y2="800"/><line x1="950" y1="650" x2="1029" y2="800"/><line x1="1020" y1="650" x2="1114" y2="800"/>
+    <line x1="95" y1="672" x2="1105" y2="672"/><line x1="72" y1="702" x2="1128" y2="702"/><line x1="44" y1="740" x2="1156" y2="740"/><line x1="12" y1="784" x2="1188" y2="784"/>
+  </g>
+  <ellipse cx="610" cy="700" rx="120" ry="20" fill="#8E7F5C" opacity=".18"/><ellipse cx="300" cy="760" rx="80" ry="14" fill="#8E7F5C" opacity=".14"/>
+  <path d="M760 660 L790 690 L780 720" stroke="#8E8263" stroke-width="2" fill="none" opacity=".6"/>
+
+  <!-- 4in tile backsplash, dark grout -->
+  <rect x="110" y="330" width="980" height="124" fill="url(#tile4)"/>
+
+  <!-- small aluminium window with valance -->
+  <rect x="506" y="166" width="188" height="218" fill="#E2DED0"/>
+  <rect x="514" y="174" width="172" height="202" fill="url(#sky)"/>
+  <path d="M514 320 C560 306 600 316 686 300 L686 376 L514 376Z" fill="#9AA392"/>
+  <line x1="600" y1="174" x2="600" y2="376" stroke="#E2DED0" stroke-width="6"/>
+  <rect x="514" y="174" width="172" height="202" fill="#7A7A6A" opacity=".12"/>
+  <path d="M492 156 L708 156 L708 214 Q690 232 672 214 Q654 232 636 214 Q618 232 600 214 Q582 232 564 214 Q546 232 528 214 Q510 232 492 214Z" fill="#A8664A"/>
+  <g fill="#D7A27E" opacity=".7"><circle cx="520" cy="180" r="4"/><circle cx="556" cy="194" r="4"/><circle cx="592" cy="178" r="4"/><circle cx="628" cy="194" r="4"/><circle cx="664" cy="180" r="4"/><circle cx="696" cy="196" r="4"/></g>
+  <rect x="490" y="150" width="220" height="8" rx="3" fill="#C9C3B0"/>
+
+  <!-- heavy upper cabinets -->
+  <g>
+    <rect x="114" y="96" width="350" height="234" fill="url(#oakOld)"/>
+    <rect x="736" y="96" width="350" height="234" fill="url(#oakOld)"/>
+    <rect x="114" y="324" width="350" height="8" fill="#000" opacity=".18"/><rect x="736" y="324" width="350" height="8" fill="#000" opacity=".18"/>
+    <g fill="none" stroke="#8C561F" stroke-width="3">
+      <path d="M128 316 L128 150 Q170 112 214 150 L214 316Z"/><path d="M230 316 L230 150 Q272 112 316 150 L316 316Z"/><path d="M332 316 L332 150 Q374 112 418 150 L418 316Z"/>
+      <path d="M752 316 L752 150 Q794 112 838 150 L838 316Z"/><path d="M854 316 L854 150 Q896 112 940 150 L940 316Z"/><path d="M956 316 L956 150 Q998 112 1042 150 L1042 316Z"/>
+    </g>
+    <g stroke="#D59D58" stroke-width="2" opacity=".5" fill="none">
+      <path d="M134 312 L134 152 Q170 120 208 152"/><path d="M236 312 L236 152 Q272 120 310 152"/><path d="M338 312 L338 152 Q374 120 412 152"/><path d="M758 312 L758 152 Q794 120 832 152"/><path d="M860 312 L860 152 Q896 120 934 152"/><path d="M962 312 L962 152 Q998 120 1036 152"/>
+    </g>
+    <g fill="#8A6B36"><circle cx="206" cy="300" r="5"/><circle cx="238" cy="300" r="5"/><circle cx="410" cy="300" r="5"/><circle cx="760" cy="300" r="5"/><circle cx="932" cy="300" r="5"/><circle cx="964" cy="300" r="5"/></g>
+    <!-- cabinet door hanging off a hinge -->
+  </g>
+  <!-- old range hood under right uppers -->
+  <polygon points="806,332 946,332 966,362 786,362" fill="url(#almond)"/><rect x="796" y="356" width="160" height="6" fill="#B5AA8C"/>
+
+  <!-- laminate counter + lowers -->
+  <rect x="106" y="452" width="988" height="16" fill="#8E6D4B"/><rect x="106" y="452" width="988" height="4" fill="#A8865F"/><rect x="106" y="464" width="988" height="4" fill="#6A4F33"/>
+  <rect x="110" y="468" width="980" height="163" fill="url(#oakOld)"/>
+  <g stroke="#8C561F" stroke-width="3" fill="none">
+    <rect x="124" y="480" width="96" height="26"/><rect x="236" y="480" width="96" height="26"/><rect x="348" y="480" width="96" height="26"/><rect x="460" y="480" width="96" height="26"/><rect x="644" y="480" width="96" height="26"/><rect x="976" y="480" width="96" height="26"/>
+    <rect x="124" y="518" width="96" height="102"/><rect x="236" y="518" width="96" height="102"/><rect x="348" y="518" width="96" height="102"/><rect x="644" y="518" width="96" height="102"/><rect x="976" y="518" width="96" height="102"/>
+  </g>
+  <!-- sagging door under sink -->
+  <g transform="rotate(6 556 518)"><rect x="458" y="518" width="98" height="102" fill="#B47838" stroke="#8C561F" stroke-width="3"/></g>
+  <rect x="460" y="518" width="12" height="104" fill="#3B2A18" opacity=".55"/>
+  <g fill="#8A6B36"><circle cx="172" cy="493" r="4.5"/><circle cx="284" cy="493" r="4.5"/><circle cx="396" cy="493" r="4.5"/><circle cx="508" cy="493" r="4.5"/><circle cx="692" cy="493" r="4.5"/><circle cx="1024" cy="493" r="4.5"/><circle cx="210" cy="540" r="4.5"/><circle cx="246" cy="540" r="4.5"/><circle cx="434" cy="540" r="4.5"/><circle cx="730" cy="540" r="4.5"/><circle cx="986" cy="540" r="4.5"/></g>
+  <!-- almond range with coil burners -->
+  <rect x="768" y="430" width="196" height="24" fill="url(#almond)"/><g fill="#6E6754"><circle cx="800" cy="442" r="5"/><circle cx="826" cy="442" r="5"/><circle cx="906" cy="442" r="5"/><circle cx="932" cy="442" r="5"/></g>
+  <rect x="770" y="454" width="192" height="177" fill="url(#almond)"/>
+  <rect x="790" y="490" width="152" height="94" rx="3" fill="#4A4436"/><rect x="790" y="490" width="152" height="18" fill="#fff" opacity=".08"/>
+  <rect x="800" y="474" width="132" height="6" rx="3" fill="#BDB295"/>
+  <!-- chrome faucet -->
+  <path d="M600 452 L600 426 L628 426" stroke="#B8BCBE" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <rect x="582" y="444" width="36" height="9" rx="3" fill="#A7ABAE"/>
+  <rect x="110" y="631" width="980" height="19" fill="#4B3A26"/>
+  <!-- stuff on counter -->
+  <rect x="200" y="404" width="80" height="48" fill="#E8E3D8"/><rect x="208" y="412" width="44" height="32" fill="#4C4A44"/><circle cx="266" cy="420" r="4" fill="#9A9488"/>
+  <rect x="340" y="420" width="28" height="32" rx="3" fill="#D3C49F"/><rect x="372" y="414" width="26" height="38" rx="3" fill="#C4B386"/>
+  <path d="M680 452 L686 420 L720 420 L726 452Z" fill="#9AA0A2"/>
+
+  <!-- fluorescent box light -->
+  <circle cx="600" cy="80" r="200" fill="url(#tube)"/>
+  <rect x="448" y="54" width="304" height="26" fill="#EEF0E8" stroke="#ABA997" stroke-width="2"/><g stroke="#C9CBC0" stroke-width="2"><line x1="448" y1="62" x2="752" y2="62"/><line x1="448" y1="70" x2="752" y2="70"/></g>
+
+  <!-- dingy cast -->
+  <rect width="1200" height="800" fill="#5C5A44" opacity=".14"/>
+</svg>
